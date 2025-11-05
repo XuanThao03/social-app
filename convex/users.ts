@@ -5,12 +5,9 @@ export const createUser = mutation({
   args: {
     username: v.string(),
     fullname: v.string(),
-    email: v.string(),
-    bio: v.optional(v.string()),
     image: v.string(),
-    folllowers: v.number(),
-    folllowing: v.number(),
-    posts: v.number(),
+    bio: v.optional(v.string()),
+    email: v.string(),
     clerkId: v.string(),
   },
   handler: async (ctx, args) => {
@@ -28,8 +25,8 @@ export const createUser = mutation({
       bio: args.bio,
       image: args.image,
       clerkId: args.clerkId,
-      folllowers: 0,
-      folllowing: 0,
+      followers: 0,
+      following: 0,
       posts: 0,
     });
   },
