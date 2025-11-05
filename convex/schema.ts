@@ -14,15 +14,13 @@ export default defineSchema({
     clerkId: v.string(),
   }).index("by_clerk_id", ["clerkId"]),
 
-  post: defineTable({
+  posts: defineTable({
     userId: v.id("users"),
     imageUrl: v.string(),
     storageId: v.id("_storage"),
     caption: v.optional(v.string()),
     likes: v.number(),
     comments: v.number(),
-    posts: v.number(),
-    clerkId: v.string(),
   }).index("by_user", ["userId"]),
 
   comments: defineTable({
