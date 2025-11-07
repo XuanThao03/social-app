@@ -7,6 +7,7 @@ import { useMutation, useQuery } from "convex/react";
 import React, { useState } from "react";
 import {
   FlatList,
+  Keyboard,
   KeyboardAvoidingView,
   Modal,
   Platform,
@@ -36,7 +37,7 @@ export default function CommentsModal({
 
   const handleAddComment = async () => {
     if (!newComment.trim()) return;
-
+    Keyboard.dismiss();
     try {
       await addComment({ content: newComment, postId });
       setNewComment("");
