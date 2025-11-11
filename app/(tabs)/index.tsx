@@ -3,7 +3,7 @@ import Post from "@/components/Post";
 import StoriesSection from "@/components/Stories";
 import { COLORS } from "@/constants/theme";
 import { api } from "@/convex/_generated/api";
-import { styles } from "@/styles/feed.style";
+import { styles } from "@/styles/feed.styles";
 import { useAuth } from "@clerk/clerk-expo";
 import { Ionicons } from "@expo/vector-icons";
 import { useQuery } from "convex/react";

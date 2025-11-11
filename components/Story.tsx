@@ -1,4 +1,4 @@
-import { styles } from "@/styles/feed.style";
+import { styles } from "@/styles/feed.styles";
 import { Image } from "expo-image";
 import { Text, TouchableOpacity, View } from "react-native";
 

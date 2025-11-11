@@ -1,4 +1,4 @@
-import { styles } from "@/styles/feed.style";
+import { styles } from "@/styles/feed.styles";
 import { formatDistanceToNow } from "date-fns";
 import { Image } from "expo-image";
 import React from "react";

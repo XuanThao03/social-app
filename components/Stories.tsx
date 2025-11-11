@@ -1,5 +1,5 @@
 import { STORIES } from "@/constants/mock-data";
-import { styles } from "@/styles/feed.style";
+import { styles } from "@/styles/feed.styles";
 import { ScrollView } from "react-native";
 import Story from "./Story";
 
