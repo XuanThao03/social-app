@@ -149,7 +149,7 @@ export default function Profile() {
                 <Text style={styles.inputLabel}>Name</Text>
                 <TextInput
                   style={styles.input}
-                  value={currentUser.fullname}
+                  value={editedProfile.fullname}
                   onChangeText={(text) =>
                     setEditedProfile((prev) => ({ ...prev, fullname: text }))
                   }
